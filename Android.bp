@@ -19,16 +19,6 @@ license {
     ],
 }
 
-license {
-    name: "adobe_hdr_gain_map_license",
-    visibility: [":__subpackages__"],
-    license_kinds: [
-        "SPDX-license-identifier-BSD",
-    ],
-    license_text: [
-        "adobe-hdr-gain-map-license/LICENSE.txt",
-    ],
-}
 
 cc_prebuilt_library {
     name: "libultrahdr",
