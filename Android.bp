@@ -38,3 +38,38 @@ cc_prebuilt_library {
         "//apex_available:anyapex",
     ],
 }
+
+cc_library_static {
+    name: "libjpegdecoder",
+    host_supported: true,
+    vendor_available: true,
+    export_include_dirs: ["include"],
+    shared_libs: [
+        "libultrahdr",
+        "libjpeg",
+        "liblog",
+        "libutils",
+    ],
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+}
+
+cc_library_static {
+    name: "libjpegencoder",
+    host_supported: true,
+    vendor_available: true,
+    export_include_dirs: ["include"],
+    shared_libs: [
+        "libultrahdr",
+        "libjpeg",
+        "liblog",
+        "libutils",
+    ],
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+}
+
